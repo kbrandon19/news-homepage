@@ -1,81 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link href="/css/dist/output.css" rel="stylesheet">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="/css/dist/output.css" rel="stylesheet" />
 
-  <title>Frontend Mentor | News homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
 
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body class="pt-4 pb-4">
+    <header class="h-auto w-auto ">
+      <div class="mobile-nav h-full w-2/3 inset-y-0 right-0 absolute bg-red-soft z-10"></div>
+      <nav
+        class="p-4 w-full h-100px flex justify-between align-middle items-center"
+      >
+        <img src="/assets/images/logo.svg" class="h-8 w-auto" alt="Logo" />
+        <img src="/assets/images/icon-menu.svg" class="h-5 w-11" alt="Menu" />
+      </nav>
 
-</head>
-<body>
-
-<header class=" h-auto w-auto">
-  <nav class="p-4 w-full  h-100px flex justify-between align-middle items-center">
-    <img src="/assets/images/logo.svg" class="h-8 w-auto" alt="Logo">
-    <img src="/assets/images/icon-menu.svg" class="h-5 w-11"alt="Menu">
-  </nav>
-</header>
-
-<section class="p-4 h-auto w-auto">
-  <div class=" h-auto w-full flex-col gap-y-5">
-
-    <div class="main-info h-auto w-full grid grid-cols-1 gap-y-5 mb-10" >  
-      <img src="/assets/images/image-web-3-mobile.jpg" alt="">
       
-      <div class="main-title w-72">
-        <h1 class="text-4xl font-inter font-extrabold">The Bright Future of Web 3.0?</h1>
+    </header>
+
+    <section class="p-4 h-auto w-auto">
+      <div class="h-auto w-full flex flex-col gap-y-5">
+        <div class="main-info h-auto w-full grid grid-cols-1 gap-y-5 mb-10">
+          <img src="/assets/images/image-web-3-mobile.jpg" alt="" />
+
+          <div class="main-title w-72">
+            <p class="text-4xl font-inter font-extrabold">
+              The Bright Future of Web 3.0?
+            </p>
+          </div>
+
+          <div class="main-caption">
+            <p class="text-dark-grayish-blue">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+
+            <button
+              class="pb-4 pt-4 pl-7 pr-7 mt-5 bg-red-soft text-off-white text-xs uppercase tracking-[.50em] font-bold"
+            >
+              <a href="#">Read More</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="sidebar-info h-auto w-full bg-very-dark-blue pt-5 pb-4 pr-5 pl-5">
+          <p class="text-orange-soft text-3xl font-bold">New</p>
+
+          <div class="news-block h-auto w-auto mt-6 mb-6">
+            <h3 class="text-off-white font-bold text-xl">
+              Hydrogen VS Electric Cars
+            </h3>
+            <p class="text-grayish-blue">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          <hr class="h-px my-4 bg-grayish-blue border-0 opacity-50" />
+          <div class="news-block h-auto w-auto mt-6 mb-6">
+            <h3 class="text-off-white font-bold text-xl">
+              The Downsides of AI Artistry
+            </h3>
+            <p class="text-grayish-blue">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <hr class="h-px my-4 bg-grayish-blue border-0 opacity-50" />
+          <div class="news-block h-auto w-auto mt-6 mb-6">
+            <h3 class="text-off-white font-bold text-xl">
+              Is VC Funding Drying Up?
+            </h3>
+            <p class="text-grayish-blue">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="main-caption ">
-        <p class="text-dark-grayish-blue">
-          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
-        </p>
-       
-        <button class="pb-4 pt-4 pl-7 pr-7 mt-5 bg-red-soft text-off-white text-xs uppercase tracking-[.50em] font-bold"><a href="#">Read More</a></button>
+<!-- News Article-->
+    <section class="p-4 h-auto w-auto mt-8">
+      <div class="info-sec h-auto w-full flex flex-col gap-y-8">
+        <!-- article 1-->
+        <div class="news1 h-auto w-auto flex flex-row justify-start gap-x-6">
+          <img
+            src="/assets/images/image-retro-pcs.jpg"
+            class="h-32 w-24"
+            alt=""
+          />
+          <div>
+            <p class="text-grayish-blue text-3xl font-extrabold">01</p>
+            <p class="font-bold text-xl mt-1 mb-1">Reviving Retro PCs</p>
+            <p class="text-dark-grayish-blue">What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+<!-- article 2-->
+        <div class="news2 h-auto w-auto flex flex-row justify-start gap-x-6">
+          <img
+            src="/assets/images/image-top-laptops.jpg"
+            class="h-32 w-24"
+            alt=""
+          />
+          <div>
+            <p class="text-grayish-blue text-3xl font-extrabold">02</p>
+            <p class="font-bold text-xl mt-1 mb-1">Top 10 Laptops of 2022</p>
+            <p class="text-dark-grayish-blue">Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+<!-- article 3-->
+        <div class="news3 h-auto w-auto flex flex-row justify-start gap-x-6">
+          <img
+            src="/assets/images/image-gaming-growth.jpg"
+            class="h-32 w-24"
+            alt=""
+          />
+          <div>
+            <p class="text-grayish-blue text-3xl font-extrabold">03</p>
+            <p class="font-bold text-xl mt-1 mb-1">The Growth of Gaming</p>
+            <p class="text-dark-grayish-blue">How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="sidebar-info h-auto w-full bg-very-dark-blue pt-5 pb-4 pr-5 pl-5">
-      <h1 class="text-orange-soft text-3xl font-bold">New</h1> 
-
-      <div class="news-block h-auto w-auto mt-6 mb-6">
-        <h3 class=" text-off-white font-bold text-xl ">Hydrogen VS Electric Cars</h3>
-        <p class="text-grayish-blue">Will hydrogen-fueled cars ever catch up to EVs?</p>
-      </div>
-      <hr class="h-px my-4 bg-grayish-blue border-0 opacity-50">
-      <div class="news-block h-auto w-auto mt-6 mb-6">
-        <h3 class="text-off-white font-bold text-xl">The Downsides of AI Artistry</h3>
-        <p class="text-grayish-blue">What are the possible adverse effects of on-demand AI image generation?</p>
-      </div>
-      <hr class="h-px my-4 bg-grayish-blue border-0 opacity-50">
-      <div class="news-block h-auto w-auto mt-6 mb-6">
-        <h3 class="text-off-white font-bold text-xl ">Is VC Funding Drying Up?</h3>
-        <p class="text-grayish-blue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="p-4 h-auto w-auto">
-  <div class="info-sec h-auto w-full flex-col">
-    <div class="news1">
-      <img src="/assets/images/image-retro-pcs.jpg" class="h-32 w-auto" alt="">
-      <div></div>
-    </div>
-    <div class="news2">asdfasdf</div>
-    <div class="news3">asdfasdf</div>
-
-  </div>
-</section>
-
-</body>
+    </section>
+  </body>
 </html>
