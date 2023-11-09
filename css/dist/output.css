@@ -430,6 +430,14 @@ video {
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
 
+
+/*custom styling */
+.menu-icon{
+  justify-content: flex-end;
+}
+.mobile-nav-links{
+  margin-top:6rem;
+}
 [hidden] {
   display: none;
 }
